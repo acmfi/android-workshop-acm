@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DAM_CALC</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">DAM_EXAMPLES</string>
+    <string name="title_activity_activity_sp">SHARED_PREFERENCES</string>
+    <string name="title_activity_activity_timetable">TIMETABLE</string>
+</resources>

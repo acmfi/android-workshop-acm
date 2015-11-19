@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:hint="@string/bienvenida" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <EditText android:id="@+id/apodo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/nick" />
+
+        <Button android:id="@+id/inicio"
+            android:layout_gravity="fill_horizontal"
+            android:text="@string/inicio"
+            android:onClick="inicio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button android:id="@+id/info"
+            android:layout_gravity="fill_horizontal"
+            android:text="@string/info"
+            android:onClick="info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button android:id="@+id/seleccion"
+            android:layout_gravity="fill_horizontal"
+            android:text="@string/seleccion"
+            android:onClick="seleccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button android:id="@+id/acuerdo"
+            android:layout_gravity="fill_horizontal"
+            android:text="@string/acuerdo"
+            android:onClick="acuerdo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

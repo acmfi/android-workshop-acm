@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Contador</string>
+    <string name="hello">Hello world!!</string>
+    <string name="contador">0</string>
+    <string name="back_number">Back number</string>
+    <string name="more_number">More number</string>
+    <string name="reset">Reset</string>
+    <string name="back_toast">Has llegado al final, alelao!</string>
+    <string name="more_toast">Hasta aqui puedo leer</string>
+</resources>

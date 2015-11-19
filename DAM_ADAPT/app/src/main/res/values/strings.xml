@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Reto1</string>
+    <string name="bienvenida">Welcome to bla bla bla</string>
+    <string name="nick">Enter your nick</string>
+    <string name="inicio">Start</string>
+    <string name="info">Game Info</string>
+    <string name="seleccion">Select</string>
+    <string name="acuerdo">Agreement</string>
+    <string name="action_settings">Settings</string>
+</resources>

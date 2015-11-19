@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Reto1</string>
+    <string name="bienvenida">Bienvenido a bla bla bla</string>
+    <string name="nick">Escribe tu apodo</string>
+    <string name="inicio">Inicio</string>
+    <string name="info">Información</string>
+    <string name="seleccion">Selección</string>
+    <string name="acuerdo">Acuerdo</string>
+    <string name="action_settings">Opciones</string>
+</resources>

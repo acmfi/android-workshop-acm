@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">R1</string>
+    <string name="bienvenida">Bienvenido</string>
+    <string name="nick">Nick</string>
+    <string name="inicio">Ini.</string>
+    <string name="info">Info.</string>
+    <string name="seleccion">Sel.</string>
+    <string name="acuerdo">Acu.</string>
+    <string name="action_settings">Op.</string>
+</resources>
