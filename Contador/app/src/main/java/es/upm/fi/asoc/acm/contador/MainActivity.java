@@ -126,15 +126,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     /**
-     *
-     * @param newNumber
+     * Un método privado que simplemente actualiza la vista para mostrar en el widget adecuado el
+     * número que se le pase
+     * @param newNumber número que se mostrará en el texto
      */
     private void changeNumber(int newNumber){
         tvNumber.setText(String.valueOf(newNumber));
     }
 
     /**
-     *
+     * Este método visualiza otra de las múltiples maneras de hacer referencia a un click en un
+     * widget 
      * @param view
      */
     @Override public void onClick(View view) {
