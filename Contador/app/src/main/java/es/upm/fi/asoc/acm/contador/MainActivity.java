@@ -136,7 +136,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     /**
      * Este método visualiza otra de las múltiples maneras de hacer referencia a un click en un
-     * widget 
+     * widget. Implementando la interfaz onClick en la clase y pasando la clase como listener del
+     * widget como se puede observar en el onCreate más arriba. Esta forma se ha utilizado para el
+     * reset del contador.
      * @param view
      */
     @Override public void onClick(View view) {
