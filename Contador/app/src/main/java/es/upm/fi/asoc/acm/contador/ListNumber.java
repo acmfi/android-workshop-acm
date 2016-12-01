@@ -21,16 +21,20 @@ import java.util.List;
  */
 public class ListNumber extends AppCompatActivity {
 
+    private int units; //Variable que recoge las unidades en las que debe sumarse nuestra lista
+
     @Override protected void onCreate(Bundle savedInstanceState) {
         //Como siempre, hay que tener en cuenta el ciclo de vida de Android y añadir el inflado del
         //xml de la vista en el onCreate.
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_number);
 
+        units = getIntent().getExtras().getInt("units");
+
         ArrayList<Integer> numbers = new ArrayList<>(); //Creamos un array donde tendremos nuestros números
 
-        //Rellenamos el array con 100 números
-        for (Integer i = 0; i <=100; i++) {
+        //Rellenamos el array con hasta 101 números, dependiendo del número de unidades
+        for (Integer i = 0; i <= 100; i += units) {
             numbers.add(i);
         }
 
