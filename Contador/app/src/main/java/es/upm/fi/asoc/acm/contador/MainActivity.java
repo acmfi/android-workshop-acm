@@ -28,7 +28,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public static final int MIN = 0; //Una constante int que usaremos para determinar el valor de mínimo del contador.
 
     private int currentNumber;//Nuestra variable con el modelo de la aplicación, simplemente tendrá el número al que hayamos llegado.
+    private int units; //Una variable para controlar el número de unidades de la lista
     private TextView tvNumber;//Nuestro objeto Textview que usaremos para mostrar el número del modelo en pantalla.
+    private Button btnUnits; //El botón de las unidades
 
     /**
      * Se ejecuta el método onCreate y allí controlaremos nuestra vista.
@@ -47,6 +49,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         } else {
             currentNumber = MIN;
         }
+        units = 0;
 
         //Se infla la vista, en activity_main.xml
         setContentView(R.layout.activity_main);
@@ -77,6 +80,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(MainActivity.this, ListNumber.class); //Creación de Intent
+                i.putExtra("units", units);
                 startActivity(i);//Inicia el intent, se irá hacia la nueva activity.
             }
         });
@@ -107,6 +111,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //En esta ocasión utilizamos el método de implementación del listener en la activity. Esto te obliga a implementar un método
         //onClick que usará este botón al ser clickado.
         btnReset.setOnClickListener(this);
+
+        //Capturamos el boton de las unidades de la lista
+        btnUnits = (Button) findViewById(R.id.units);
+        //Añdimos el listener del boton
+        btnUnits.setOnClickListener(new View.OnClickListener() {
+            @Override public void onClick(View view) {
+                if (units < MAX) {
+                    units += 10;
+                } else {
+                    units = 0;
+                }
+                changeUnits();
+            }
+        });
     }
 
     /**
@@ -132,6 +150,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      */
     private void changeNumber(int newNumber){
         tvNumber.setText(String.valueOf(newNumber));
+    }
+
+    /**
+     * Un método privado que actualiza la vista del boton con las unidades seleccionadas. Si la
+     * variable es 0 se muestra la unidad mínima.
+     */
+    private void changeUnits(){
+        if (units == 0) {
+            btnUnits.setText("1");
+        } else {
+            btnUnits.setText(String.valueOf(units));
+        }
     }
 
     /**
